@@ -38,11 +38,12 @@ export default class App extends  Component
     })
    
     const datarepo = repo(inputValue);
+    console.log(datarepo);
     datarepo.then((results) => {
       this.setState({
         repo : results
       })
-      console.log(results)
+      // console.log(results)
     })
 
     this.setState({
